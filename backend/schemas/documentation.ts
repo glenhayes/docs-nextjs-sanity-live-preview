@@ -1,5 +1,6 @@
 import {defineField, defineType} from 'sanity'
 import {MdOutlineArticle} from 'react-icons/md'
+import content from './fields/content'
 export default defineType({
   name: 'documentation',
   title: 'Documentation',
@@ -18,5 +19,6 @@ export default defineType({
         source: 'title',
       },
     }),
+    content,
   ],
 })
