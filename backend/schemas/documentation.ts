@@ -1,6 +1,7 @@
 import {defineField, defineType} from 'sanity'
 import {MdOutlineArticle} from 'react-icons/md'
 import content from './fields/content'
+import documentCategory from './objects/document-category'
 export default defineType({
   name: 'documentation',
   title: 'Documentation',
@@ -18,6 +19,11 @@ export default defineType({
       options: {
         source: 'title',
       },
+    }),
+    defineField({
+      name: 'category',
+      type: 'reference',
+      to: [documentCategory],
     }),
     content,
   ],
