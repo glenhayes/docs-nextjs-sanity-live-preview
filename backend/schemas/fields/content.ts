@@ -9,6 +9,9 @@ export default defineField({
       type: 'block',
     },
     {
+      type: 'code',
+    },
+    {
       type: 'image',
     },
   ],
